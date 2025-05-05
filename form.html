@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscribe - Formulario</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilos específicos para el video de fondo */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+    
+    /* Ajuste del contenedor del formulario para mejorar la legibilidad sobre el video */
+    .form-container {
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.9);
+      width: 80%;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body class="form-page">
+  <!-- Video de fondo -->
+  <video autoplay muted loop id="bg-video">
+    <source src="C:\Users\arche\OneDrive\Escritorio\Inteligencia Artificial\13452402_2160_3840_60fps.mp4" type="video/mp4">
+    Tu navegador no soporta los videos de fondo.
+  </video>
+  
+  <div class="form-container">
+    <h1>Suscríbete a nuestro Newsletter</h1>
+    <form action="#" method="post">
+      <label for="fname">Nombre</label>
+      <input type="text" id="fname" name="first_name" placeholder="Tu nombre..." required>
+      
+      <label for="lname">Apellido</label>
+      <input type="text" id="lname" name="last_name" placeholder="Tu apellido..." required>
+      
+      <label for="email">Correo Electrónico</label>
+      <input type="email" id="email" name="email" placeholder="Tu correo electrónico..." required>
+      
+      <label for="question">Consulta</label>
+      <textarea id="question" name="question" rows="4" placeholder="Tu pregunta..."></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
