@@ -1,0 +1,136 @@
+/* ==========================
+   Reset y estilos básicos
+   ========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* ==========================
+   Estilos para la cabecera
+   ========================== */
+header {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* ==========================
+   Estilos para el contenido principal
+   ========================== */
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Centramos y damos espacio a los videos */
+video {
+  display: block;
+  margin: 10px auto;
+}
+
+/* ==========================
+   Estilos para botones y enlaces
+   ========================== */
+button {
+  cursor: pointer;
+  background-color: #007BFF;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==========================
+   Estilos para el pie de página
+   ========================== */
+footer {
+  background-color: #007BFF;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* ==========================
+   Estilos específicos para la página del formulario
+   ========================== */
+/* Asegúrate de establecer class="form-page" en el body del formulario si deseas aplicar estos estilos */
+body.form-page {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor del formulario */
+.form-container {
+  background-color: #fff;
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Botón del formulario */
+.form-container button {
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
